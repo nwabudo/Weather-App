@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Raleway-SemiBold;
+    src: url("/fonts/Raleway-SemiBold.ttf");
+    }
+@font-face {
+    font-family: Raleway-Regular;
+    src:  url("/fonts/Raleway-Regular.ttf");
+   }
+@font-face {
+    font-family: Raleway-Medium;
+    src:  url("/fonts/Raleway-Medium.ttf");
+   }
+@font-face {
+    font-family: Raleway-ExtraBold;
+    src:  url("/fonts/Raleway-ExtraBold.ttf");
+   } 
+    
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(36, 103, 112), rgb(37, 42, 73));
+    font-family: sans-serif;
+    color: white;
+}
+.location {
+    font-family: Raleway-ExtraBold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.location , 
+.temperature{
+    height: 10vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.temperature {
+    flex-direction: row;
+    margin: 1rem;
+    font-size: 20px;
+    font-family: Raleway-Medium;
+    font-weight: 200;
+}
+.temperature-degree {
+    display: flex;
+    align-items: center;
+   
+}
+.degree-unit {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.search {
+    background-color: rgb(113, 235, 14);
+    height: 15vh;
+    width: 600px;
+}
+.search h2 {
+    color: rgb(2, 15, 2);
+    margin: 3px 8px;
+    font-family: Raleway-Regular;
+    font-size: 30px;
+}
+.search input {
+    margin: 23px 0 8px 8px;
+    width: 500px;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+.search button {
+    background-color: rgb(2, 15, 2);
+    color: white;
+    size: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search span {
+    font-size: 10px;
+    text-align: center;
+}
